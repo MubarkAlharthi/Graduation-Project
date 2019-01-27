@@ -1,0 +1,44 @@
+/* ul { overflow:auto; }
+li { float:right; }
+li:last-child { float:right; } */
+.json_here ul {
+  overflow: auto;
+}
+
+.json_here ul {
+  float: right;
+}
+
+.json_here li:last-child {
+  float: right;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card-body .rotate {
+  z-index: 8;
+  float: right;
+  height: 100%;
+}
+
+.panel-heading .rotate i {
+  box-sizing: content-box;
+  width: 100%;
+  color: rgba(20, 20, 20, 0.15);
+  /* position: relative;
+    top: 10px;
+    left: 20px;
+    bottom: 0;
+    display: block;
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    transform: rotate(-44deg); */
+}
+
+.text-muted {
+  color: #902;
+}

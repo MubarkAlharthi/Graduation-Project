@@ -1,0 +1,38 @@
+select count(*),Tweets.source
+from Tweets
+group by Tweets.source
+order by count(*) desc;
+
+iPhone
+select count(Tweets.source) From Tweets where Tweets.source = "<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>";
+
+Android
+select count(Tweets.source) From Tweets where Tweets.source = "<a href=""http://twitter.com/download/android"" rel=""nofollow"">Twitter for Android</a>";
+
+Twitter Web Client
+select  count(Tweets.source)
+from Tweets
+where Tweets.source = "<a href=""http://twitter.com"" rel=""nofollow"">Twitter Web Client</a>"
+
+TweetDeck
+select Tweets.source
+From Tweets
+where Tweets.source = "<a href=""https://about.twitter.com/products/tweetdeck"" rel=""nofollow"">TweetDeck</a>";
+
+
+select count(Tweets.source)
+		From Tweets
+		group by Tweets.source
+		ORDER BY Count(Tweets.source ) desc;
+
+====
+select Tweets.source
+From Tweets
+group by Tweets.source;
+-
+select count(Tweets.source)
+From Tweets
+group by Tweets.source
+ORDER BY Count(Tweets.source ) desc;
+====
+select Tweets.created_at from Tweets where Tweets.created_at regexp "\d\d\d\d\d"
